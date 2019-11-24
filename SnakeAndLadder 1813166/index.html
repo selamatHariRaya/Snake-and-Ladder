@@ -1,0 +1,43 @@
+<!--Done together with Nur Anis Affandi (1817100)-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Snakes and Ladders</title>
+      <link rel="stylesheet" href="stylesheet.css">
+  </head>
+
+  <body>
+    <div class ='container'>
+        <div class='wrapper-top'>
+        <h1>Snake and Ladder Game</h1>
+        </div>
+
+        <div class="wrapper1">
+          <div id='overlay'></div>
+          <table id='tbl' border="2px"></table>
+        </div>
+
+        <div class="wrapper2">
+          <div class='top-row right-section'>
+            <button class="resetButton" type="button">Play again</button>
+          </div>
+
+          <div class='middle-row right-section'>
+            <h3>Player1 Player2</h3>
+            <img class='circle' src="img/circle.png" alt="golden circle">
+            <img class="p1Turn turn" src="img/One.png" alt="p1">
+            <img class="p2Turn turn" src="img/Two.png" alt="p2">
+          </div>
+
+          <div class='bottom-row right-section'>
+            <button class="dieButton" type="button" >Roll</button>
+            <div class='dieValue'>0</div>
+          </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>

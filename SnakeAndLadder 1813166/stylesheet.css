@@ -1,0 +1,170 @@
+/*Done together with Nur Anis Affandi (1817100)*/
+
+body, html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+table {
+  text-align:left;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper-top {
+  width: 1000px;
+  height: 20px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+td {
+  max-width: 50px;
+  max-height: 50px;
+  position: relative;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.player1, .player2 {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+
+.p1 {
+  width: 50px;
+  height: 50px;
+  background: url('img/One.png');
+  animation: p1 2s steps(1) infinite;
+}
+
+@keyframes p1 {
+  100% {background-position: -498px;}
+}
+
+.p2 {
+  width: 50px;
+  height: 50px;
+  background: url('img/Two.png');
+  animation: p2 2s steps(1) infinite;
+}
+
+@keyframes p2 {
+  100% {background-position: -209px;}
+}
+
+button {
+  float: right;
+}
+
+.wrapper1 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 250px;
+}
+
+#overlay {
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-image: url('img/overlay.png');
+  background-repeat: no-repeat;
+}
+
+.wrapper2 {
+  display: inline-block;
+  width: 330px;
+  height: 565px;
+  margin-left: 30px;
+  border-radius: 10px;
+}
+
+.right-section {
+  min-width: 280px;
+  min-height: 80px;
+}
+
+.top-row {
+  position: relative;
+}
+
+.resetButton {
+  float: left;
+  margin-top: 30px;
+}
+
+.middle-row {
+  position:relative;
+  margin-top: -35px;
+}
+
+.turn, h3 , .circle {
+  position:absolute;
+}
+
+h3 {
+  left: 65px;
+  top: 0px;
+  word-spacing: 55px;
+}
+
+.p1Turn {
+  left: 60px;
+  top: 50px;
+  width: 70px;
+}
+
+.p2Turn {
+  left: 180px;
+  top: 55px;
+  width: 70px;
+}
+
+.circle {
+  left: 25px;
+  top: 30px;
+}
+
+.bottom-row {
+  position:relative;
+  height: 210px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 40px;
+}
+
+.dieValue {
+  position: absolute;
+  border-radius: 5px;
+  border: 2px solid black;
+  width:52px;
+  height: 42px;
+  padding:10px 10px 20px 10px;
+  font-size:44px;
+  background:#F5F5F5;
+  top: 60px;
+  left: 115px;
+  text-align:center;
+  }
+
+.dieButton {
+  position: absolute;
+  border-radius: 5px;
+  width:52px;
+  padding:1px;
+  font-size:14px;
+  background:#F5F5F5;
+  top: 25px;
+  left: 127px;
+  text-align:center;
+}
